@@ -8,6 +8,7 @@ export default Ember.Component.extend({
 
   // Default settings
   enableTime: false,
+  noCalendar: false,
   dateFormat: 'F j, Y',
   timeFormat: "H:i",
   defaultDate: null,
@@ -28,6 +29,7 @@ export default Ember.Component.extend({
 
       // Options
       enableTime: this.get('enableTime'),
+      noCalendar: this.get('noCalendar'),
       dateFormat: this.get('dateFormat'),
       timeFormat: this.get('timeFormat'),
       defaultDate: this.get('defaultDate'),
